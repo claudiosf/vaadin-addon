@@ -4,7 +4,6 @@ import com.test.mycomponent.MyComponent;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
-import com.vaadin.ui.Label;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
 
@@ -19,6 +18,7 @@ public class MyVaadinUI extends UI
     protected void init(VaadinRequest request) {
 
         final MyComponent component = new MyComponent();
+        component.setText("This is my component");
         addComponent(component);
         
         final TextField text = new TextField();
